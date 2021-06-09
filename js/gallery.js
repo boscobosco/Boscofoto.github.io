@@ -11,6 +11,8 @@ jQuery("#animated-thumbnails-gallery")
       {
         autoplayFirstVideo: false,
         pager: false,
+        download: false,
+        zoom: false,
         galleryId: "nature",
         plugins: [lgZoom, lgThumbnail],
         mobileSettings: {
