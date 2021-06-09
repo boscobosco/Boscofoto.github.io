@@ -53,8 +53,8 @@ table{
 
 th, td{
   //border: 1px solid black;
-  vertical-align: top;
-  text-align: left;
+  vertical-align:top;
+  text-align:left;
 }
 
 table th{

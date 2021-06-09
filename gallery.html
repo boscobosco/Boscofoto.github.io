@@ -1,41 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-<meta charset="UTF-8">
-<title>Gallery - Boscofoto </title>
-<link rel="stylesheet" type="text/css" href="css/gallery.css">
-<script src="js/gallery.js"></script>
+  <meta charset="UTF-8">
+  <title>Gallery - Bosco Foto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-thumbnail.css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="js/gallery.js">
+<link rel="stylesheet" href="css/gallery.css">
+
+
 </head>
-
-<header>
-  <div class="header">
-      <p><a href="index.html">Bosco</a></p>
-      <p><a href="gallery.html">Gallery</a></p>
-      <p><a href="about.html">About</a></p>
-    </div>
-</header>
-
 <body>
-  <div class="switch">
-    <div class="toggleClass" onclick="toggleClass();">
-    <input class="checkbox" type="checkbox">
+  <section class="tall">
+    <h3>BoscoC. Foto</h3>
+    <nav class="jmenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="jm-dropdown">
+          <a href="javascript:void(0)">Categories<span class="jm-icon-dropdown"></span></a>
+          <ul>
+            <li><a href="javascript:void(0)">Type1</a></li>
+            <li><a href="javascript:void(0)">Type2</a></li>
+            <li><a href="javascript:void(0)">Type3</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </section>
+<!-- partial:index.partial.html -->
+<div class="header d-flex flex-column align-items-center">
+  <h1 class="display-6 mt-3 mb-0"></h1>
+  <p class="lead mt-2 mb-4">
+  </p>
+</div>
+<div class="container-sm">
+  <div class="row justify-content-center">
+    <div class="col col-md-10">
+      <div class="gallery-container" id="animated-thumbnails-gallery">
+
+        <a data-lg-size="1920-1080" class="gallery-item" data-src="./img/gallery/gallery1_HD.jpg" data-sub-html="<a href='./img/gallery/gallery1_HD.jpg'>">
+        <img class="img-responsive" src="./img/gallery/gallery1_HD.jpg" />
+        </a>
+
+        <a data-lg-size="1920-1080" data-pinterest-text="Pin it2" data-tweet-text="lightGallery slide  2" class="gallery-item" data-src="./img/gallery/gallery2_HD.jpg" data-sub-html="<a href='./img/gallery/gallery2_HD.jpg'>">
+        <img class="img-responsive" src="./img/gallery/gallery2_HD.jpg" />
+        </a>
+
+        <a data-lg-size="1920-1080" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  3" class="gallery-item" data-src="./img/gallery/gallery3_HD.jpg" data-sub-html="<a href='./img/gallery/galler3_HD.jpg'>">
+        <img class="img-responsive" src="./img/gallery/gallery3_HD.jpg" />
+        </a>
+
+        <a data-lg-size="1920-1080" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  3" class="gallery-item" data-src="./img/gallery/gallery4_HD.jpg" data-sub-html="<a href='./img/gallery/galler4_HD.jpg'>">
+          <img class="img-responsive" src="./img/gallery/gallery4_HD.jpg" />
+          </a>
+
+        <a data-lg-size="1920-1080" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  3" class="gallery-item" data-src="./img/gallery/gallery5_HD.jpg" data-sub-html="<a href='./img/gallery/galler5_HD.jpg'>">
+        <img class="img-responsive" src="./img/gallery/gallery5_HD.jpg" />
+        </a>
+
+        <a data-lg-size="1920-1080" data-pinterest-text="Pin it3" data-tweet-text="lightGallery slide  3" class="gallery-item" data-src="./img/gallery/gallery6_HD.jpg" data-sub-html="<a href='./img/gallery/galler6_HD.jpg'>">
+        <img class="img-responsive" src="./img/gallery/gallery6_HD.jpg" />
+        </a>
+      
+        </a>
+      </div>
     </div>
   </div>
-
-  <section class="gallery">
-	<img src="/photo/FHD/2_FHD.jpg">
-	<img src="/photo/FHD/2_FHD.jpg">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/606x404">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/609x406">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/612x408">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/615x410">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/618x412">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/621x414">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/624x416">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/627x418">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/630x420">
-	<img src="https://source.unsplash.com/user/mkmueller/likes/633x422">
-</section>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js'></script>
+<script  src="/js/gallery.js"></script>
 
 </body>
 </html>
