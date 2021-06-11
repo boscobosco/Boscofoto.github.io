@@ -9,10 +9,15 @@ jQuery("#animated-thumbnails-gallery")
     window.lightGallery(
       document.getElementById("animated-thumbnails-gallery"),
       {
+        animateThumb: true,
         autoplayFirstVideo: false,
         pager: false,
         download: false,
         zoom: false,
+        animateThumb: false,
+        zoomFromOrigin: false,
+        allowMediaOverlap: true,
+        toggleThumb: true,
         galleryId: "nature",
         plugins: [lgZoom, lgThumbnail],
         mobileSettings: {
